@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins";
+    background-color:black;
+}
+:root{
+    --primary-color:white;
+    --secondary-color:black;
+    --primary-font-color:black;
+    --seconday-font-color:rgb(216, 248, 119);
+    --thirsiary-color:rgb(226, 181, 243);
+    --primary-font:"poppins";
+    --secondary-font:"gotham";
+    --primary-font-size:16px;
+    --secondary-font-size:18px;
+    --heading-size:60px;
+}
+nav{
+  background: transparent;
+  font-size:15px;
+  letter-spacing:1px;
+  font-family:"gotham";
+}
+nav ul{
+    display:flex;
+    list-style-type:none;
+}
+nav ul a{
+    color:black;
+}
+nav ul li{
+   padding-right:0.8rem;
+}
+nav ul li img{
+    height:80px;
+    width:auto;
+}
+.hero{
+    width:100%;
+    height:100vh; 
+    color:var(--primary-font-color-color);
+    background:linear-gradient(40deg, rgb(203, 233, 226),rgba(255,255,255),rgb(237, 188, 222));
+}
+.contact{
+    width:100%;
+    min-height:auto;
+    background-color:black;
+    color:whitesmoke;
+    display:flex;
+}
+.contact .first-column{
+    display:flex;
+    padding-bottom:5rem;
+}
+.contact .first-column div{
+    padding-right:3rem;
+}
+.contact .last-column{
+    padding-bottom:3rem;
+    padding-top:5rem;
+}
+.contact .last-column p{
+    padding-bottom:1.5rem;
+}
+.contact h1{
+    color:rgb(216, 248, 119);
+    font-size:var(--heading-size);
+    padding-top:5rem;
+    padding-left:2rem;
+}
+.contact p sup{
+    transform:translateY(-5px);
+    font-size:20px;
+    color:rgb(216, 248, 119);
+}
+.contact input{
+    display:inline;
+    padding-right:10rem;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid whitesmoke;
+}
+.contact button{
+    background-color: rgb(45, 42, 42);
+    color:var(--primary-font);
+    padding:0.5rem 0.8rem;
+    border-radius:20px;
+    border: none;
+}
+.contact button:hover{
+    background-color: rgb(71, 71, 71);
+}
+.contact submit{
+    padding:0.5rem 1.3rem;
+    border-radius:20px;
+    background-color:white;
+    color:var(--primary-font-color);
+}
+.contact submit:hover img{
+    background-color:var(--seconday-font-color);
+}
+.contact submit img{
+    transform: translateY(5px);
+}
+.contact form{
+    padding-left:5rem;
+    padding-top:2.5rem;
+}
+.faq{
+    width:100%;
+    height:100vh;
+    background-color:var(--secondary-color);
+    color:white;
+    padding:2rem 5rem;
+}
+.faq div{
+    border-bottom:1px solid white;
+    padding:2rem 0rem;
+}
+.faq .answer{
+    display: none;
+}
+footer{
+    background-color: black;
+    color:white;
+}
+.about .skills{
+    display:block;
+    padding:3rem;
+}
+.about .skills  a{
+    color:black;
+    padding-right:20px;
+    text-decoration: none;
+}
+.about  .skills a img{
+    transform:translateY(5px);
+    height:30px;
+    width:auto;
+}
+.about .skills a:hover{
+    color:blue;
+}
+.about .skills p{
+    font-size:25px;
+    display:inline;  
+}
+@media (max-width:768px) {
+    body{
+        overflow-x:hidden;
+    }
+    nav{
+        border-radius:50px;
+        position: fixed;
+        margin:2rem;
+        background-color:white;
+    }
+    .about .skills a{
+        display:block;
+    }
+    .about .skills a p{
+        font-size:20px;
+    }
+    .contact {
+        display: flex;
+        flex-direction:column;
+    }
+    .contact form .first-column{
+        display:flex;
+        flex-direction:column;
+        padding:1rem 0rem;
+    }
+    .contact h1{
+        font-size:50px;
+    }
+    .contact .first-column div{
+        padding-right:0rem;
+    }
+    .contact .last-column{
+        padding-bottom:3rem;
+        padding-top:5rem;
+    }
+    .contact .last-column p{
+        padding-bottom:1rem;
+    }
+    .contact form{
+        display:flex;
+        flex-direction:column;
+    }
+    .contact submit{
+        padding:0.5rem 0.5rem;
+    }
+    
+    footer{
+        height:100vh;
+        width:100%;
+        background-color: rgb(247, 87, 13);
+        overflow-x:hidden;
+        position:sticky;
+        z-index:0;
+    }
+    footer .nav-link ul{
+        padding:1rem 2rem;
+    }
+    footer .nav-link ul li{
+        border-top:1px solid white;
+    }
+}

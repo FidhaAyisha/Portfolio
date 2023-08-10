@@ -1,0 +1,28 @@
+*{
+    font-family:"poppins";
+}
+body{
+    background:black;
+    color:white;
+}
+body h1,h3{
+    color:rgb(224, 138, 18);
+    padding-left:30px;
+}
+body h2{
+    color:rgb(193, 224, 18);
+}
+body .main-head{
+    background-color:white;
+    border-radius:30px;
+}
+body input{
+    padding-left:20px;
+    background: transparent;
+    border: none;
+    border-bottom:1px solid white;
+    color:white;
+}
+body .sign-up{
+   display: flex;
+}
